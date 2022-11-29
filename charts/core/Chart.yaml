@@ -1,6 +1,6 @@
 name: core
 apiVersion: v1
-version: 2.2.5
+version: 2.2.6
 appVersion: 5.0.5
 description: Helm chart for NeuVector's core services on EKS
 home: https://neuvector.com
