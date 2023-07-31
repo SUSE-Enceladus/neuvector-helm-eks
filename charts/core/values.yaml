@@ -502,5 +502,5 @@ awsbilling:
   imagePullSecrets:
   image:
     repository: suse/neuvector-csp-billing-adapter-llc/csp-billing-adapter
-    tag: 0.3.0.17.5
-    hash: sha256:6850596dcf5b99f9c47d7510168861db700b35365e86a7382e4492a9f87e142e
+    tag: 0.3.1.1.3
+    hash: sha256:2b7e3aea27fcb3488b22561638afc5511d694e9d32a3a4f5955257608ebe2446
