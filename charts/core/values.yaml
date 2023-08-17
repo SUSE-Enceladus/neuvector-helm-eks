@@ -31,8 +31,8 @@ controller:
       maxUnavailable: 0
   image:
     repository: suse/neuvector-csp-billing-adapter-llc/controller
-    tag: 5.2.0
-    hash: sha256:b3818e4eee6dae0759c1280485de0e1700abfd0cbbc4f5188ec45d1579c726c2
+    tag: 5.2.0-s1
+    hash: sha256:209c7c05b557482f6f6d61262a1484b9eacc0ca06dfd25d5bb4391c7a260fedb
   replicas: 3
   disruptionbudget: 0
   schedulerName:
@@ -228,8 +228,8 @@ enforcer:
   enabled: true
   image:
     repository: suse/neuvector-csp-billing-adapter-llc/enforcer
-    tag: 5.2.0
-    hash: sha256:8418e644b9042f305a68789d99a62279fe3244de565a29cb1572b3e8030b8944
+    tag: 5.2.0-s1
+    hash: sha256:f2c0c4ca25e2b42d1e40f843d53a25402ced4d025611c676cccf0adf5b9a6722
   updateStrategy:
     type: RollingUpdate
   priorityClassName:
@@ -260,8 +260,8 @@ manager:
   enabled: true
   image:
     repository: suse/neuvector-csp-billing-adapter-llc/manager
-    tag: 5.2.0
-    hash: sha256:c5b6da2ffbc9f63e8d250d5985f722830dfb5cc8958e8f64f7e14edc18b584fa
+    tag: 5.2.0-s1
+    hash: sha256:23f9475096abdf922de40495cde8e361c45d1d2064f0ee880dd6ba7d8b8986ff
   priorityClassName:
   env:
     ssl: true
@@ -412,8 +412,8 @@ cve:
     secure: false
     image:
       repository: suse/neuvector-csp-billing-adapter-llc/updater
-      tag: 5_20230707
-      hash: sha256:31c7c4b46e0f846059568939c797af8db9beb140b7504fddc6fcc5b81e4bb80b
+      tag: 5_20230810
+      hash: sha256:e387a9aeec73cede3dcff73ba854007813f434738d3875220c22a17cd2f7a0c5
     schedule: "0 0 * * *"
     priorityClassName:
     podLabels: {}
@@ -433,8 +433,8 @@ cve:
         maxUnavailable: 0
     image:
       repository: suse/neuvector-csp-billing-adapter-llc/scanner
-      tag: 5_20230707
-      hash: sha256:5e420717195693ef9661504c2c3bd5ec5a7f7cb3471c9303bfeb5c541f29f4a0
+      tag: 5_20230810
+      hash: sha256:463bb64d06514be51c0e7cd2fae7f6f6b0c682d364122c167aaf1bc55c155d79
     priorityClassName:
     resources: {}
       # limits:
@@ -460,6 +460,7 @@ cve:
         caFile: ca.crt # must be the same CA for all internal.
 
 docker:
+  enabled: false
   path: /var/run/docker.sock
 
 resources: {}
@@ -502,5 +503,5 @@ awsbilling:
   imagePullSecrets:
   image:
     repository: suse/neuvector-csp-billing-adapter-llc/csp-billing-adapter
-    tag: 0.3.1.1.3
-    hash: sha256:2b7e3aea27fcb3488b22561638afc5511d694e9d32a3a4f5955257608ebe2446
+    tag: 0.3.1.1.6
+    hash: sha256:1a73a76f9f1bf6571659080db57dbbead3b0811f3281e543f5ca2fc5998f1def
