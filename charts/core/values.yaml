@@ -434,7 +434,7 @@ cve:
     image:
       repository: suse/neuvector-prime-lto-llc/scanner
       tag: 5_20230810
-      hash: 709825985650.dkr.ecr.us-east-1.amazonaws.com/suse/neuvector-prime-lto-llc/scanner:5_20230810
+      hash: sha256:463bb64d06514be51c0e7cd2fae7f6f6b0c682d364122c167aaf1bc55c155d79
     priorityClassName:
     resources: {}
       # limits:
