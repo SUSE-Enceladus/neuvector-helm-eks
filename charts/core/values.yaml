@@ -30,7 +30,7 @@ controller:
       maxSurge: 1
       maxUnavailable: 0
   image:
-    repository: suse/neuvector-csp-billing-adapter-ltd/controller
+    repository: suse/neuvector-prime-lto-ltd/controller
     tag: 5.2.0-s1
     hash: sha256:209c7c05b557482f6f6d61262a1484b9eacc0ca06dfd25d5bb4391c7a260fedb
   replicas: 3
@@ -227,7 +227,7 @@ enforcer:
   # If false, enforcer will not be installed
   enabled: true
   image:
-    repository: suse/neuvector-csp-billing-adapter-ltd/enforcer
+    repository: suse/neuvector-prime-lto-ltd/enforcer
     tag: 5.2.0-s1
     hash: sha256:f2c0c4ca25e2b42d1e40f843d53a25402ced4d025611c676cccf0adf5b9a6722
   updateStrategy:
@@ -259,7 +259,7 @@ manager:
   # If false, manager will not be installed
   enabled: true
   image:
-    repository: suse/neuvector-csp-billing-adapter-ltd/manager
+    repository: suse/neuvector-prime-lto-ltd/manager
     tag: 5.2.0-s1
     hash: sha256:23f9475096abdf922de40495cde8e361c45d1d2064f0ee880dd6ba7d8b8986ff
   priorityClassName:
@@ -334,7 +334,7 @@ cve:
   adapter:
     enabled: false
     image:
-      repository: suse/neuvector-csp-billing-adapter-ltd/registry-adapter
+      repository: suse/neuvector-prime-lto-ltd/registry-adapter
       tag: 0.1.0
       hash: sha256:ba76093c8c9e9b004fce79d45555b8d4e1a69d57a06b67bfba142ebbcc066eb1
     priorityClassName:
@@ -411,7 +411,7 @@ cve:
     enabled: true
     secure: false
     image:
-      repository: suse/neuvector-csp-billing-adapter-ltd/updater
+      repository: suse/neuvector-prime-lto-ltd/updater
       tag: 5_20230810
       hash: sha256:e387a9aeec73cede3dcff73ba854007813f434738d3875220c22a17cd2f7a0c5
     schedule: "0 0 * * *"
@@ -432,7 +432,7 @@ cve:
         maxSurge: 1
         maxUnavailable: 0
     image:
-      repository: suse/neuvector-csp-billing-adapter-ltd/scanner
+      repository: suse/neuvector-prime-lto-ltd/scanner
       tag: 5_20230810
       hash: sha256:463bb64d06514be51c0e7cd2fae7f6f6b0c682d364122c167aaf1bc55c155d79
     priorityClassName:
@@ -502,6 +502,6 @@ awsbilling:
   annotations: {}
   imagePullSecrets:
   image:
-    repository: suse/neuvector-csp-billing-adapter-ltd/csp-billing-adapter
-    tag: 0.3.1.20230821
-    hash: sha256:5c72c7dedfeb9edb347e83edb6193fd73248b2c7e0ef41347e8a2cf25a525c29
+    repository: suse/neuvector-prime-lto-ltd/csp-billing-adapter
+    tag: 0.3.1.1.2
+    hash: sha256:ed46ab701082d9d8df187740bbc3259e781d6e557a2d1367e525f64bfb637b14
